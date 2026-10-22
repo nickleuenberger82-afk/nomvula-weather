@@ -1,0 +1,15 @@
+{
+  "name": "nomvula-weather",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Nomvula Weather: live forecast, field planning, fire danger and daily records for Nomvula, Klaserie Private Nature Reserve.",
+  "scripts": {
+    "test": "node test/run.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0",
+    "astronomy-engine": "^2.1.19"
+  },
+  "engines": { "node": ">=20" }
+}

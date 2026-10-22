@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Nomvula Weather</title>
+<meta name="description" content="Live weather, fire danger, walk and drive planning and daily records for Nomvula, Klaserie Private Nature Reserve.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#504C29">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Weather">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="hero" role="banner">
+    <img class="logo" alt="Nomvula" src="/icons/logo.png" width="520" height="404">
+    <div class="ht"><div class="t">Weather at Nomvula</div><div class="s">Klaserie Private Nature Reserve</div></div>
+  </header>
+  <nav class="tabs2" role="tablist" aria-label="Sections">
+    <button type="button" role="tab" data-tab="fc" aria-selected="true">Forecast</button>
+    <button type="button" role="tab" data-tab="dt" aria-selected="false">Detail</button>
+    <button type="button" role="tab" data-tab="rec" aria-selected="false">Records</button>
+  </nav>
+  <main>
+    <div id="fc" class="pane" role="tabpanel"><div class="skel card">Loading the latest forecast…</div></div>
+    <div id="dt" class="pane" role="tabpanel" hidden><div class="skel card">Loading the detail…</div></div>
+    <div id="rec" class="pane" role="tabpanel" hidden><div class="skel card">Loading the weather records…</div></div>
+  </main>
+  <footer>
+    <span class="w">Enjoy the bush.</span>
+    <span class="contact">nomvula@modaughters.com · 083 226 9891</span>
+    <span class="fsrc" id="src">Forecast data: Open-Meteo, MET Norway (yr.no) and the Hoedspruit weather station.</span>
+  </footer>
+</div>
+<script src="/app.js" defer></script>
+</body>
+</html>
