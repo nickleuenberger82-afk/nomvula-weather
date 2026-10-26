@@ -6,6 +6,7 @@
 
 [functions]
   node_bundler = "esbuild"
+  included_files = ["node_modules/astronomy-engine/**"]
 
 [[headers]]
   for = "/sw.js"
