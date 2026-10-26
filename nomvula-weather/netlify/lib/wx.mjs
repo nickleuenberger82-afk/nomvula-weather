@@ -2,7 +2,8 @@
    sun and moon, the Lowveld fire danger index, walk and drive windows,
    alerts and field notes for each day. Shared by the forecast API and the
    hourly logger. All times are SAST (UTC+2, no daylight saving). */
-import * as Astro from "astronomy-engine";
+import { createRequire } from "node:module";
+const Astro = createRequire(import.meta.url)("astronomy-engine");
 
 export const SITE = { name: "Nomvula", lat: -24.273728, lon: 31.133282, elev: 380 };
 const OFF = 2 * 3600e3;
